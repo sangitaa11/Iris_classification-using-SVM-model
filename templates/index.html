@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Iris Flower Classifier</h1>
+    <div class="container">
+        <label for="sepal_length">Sepal Length:</label>
+        <input type="number" id="sepal_length">
+        <label for="sepal_width">Sepal Width:</label>
+        <input type="number" id="sepal_width">
+        <label for="petal_length">Petal Length:</label>
+        <input type="number" id="petal_length">
+        <label for="petal_width">Petal Width:</label>
+        <input type="number" id="petal_width">
+        <button onclick="classify()">Classify</button>
+        <p id="result"></p>
+        <div id="flower-images"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

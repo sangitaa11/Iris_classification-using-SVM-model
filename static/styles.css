@@ -1,0 +1,89 @@
+/* Define CSS variables for the colors */
+:root {
+    --color-primary: #FED9ED;
+    --color-secondary: #E7BCDE;
+    --color-tertiary: #BB9CC0;
+    --color-accent1: #67729D;
+    --color-accent2:#38E54D;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-accent1);
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    margin: 20px auto;
+    width: 300px;
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: var(--color-accent2);
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-accent1);
+}
+
+/* Input styles */
+input {
+    width: calc(100% - 16px); /* Adjust for padding */
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; 
+}
+
+/* Button styles */
+button {
+    width: 96%;
+    padding: 10px;
+    background-color: var(--color-accent1);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: var(--color-accent2);
+}
+
+/* Result paragraph styles */
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color:#377D71;
+}
+
+/* Flower images container styles */
+#flower-images {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.flower-image {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%;
+    border: 2px solid #66ff00;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure image fits within dimensions */
+}
